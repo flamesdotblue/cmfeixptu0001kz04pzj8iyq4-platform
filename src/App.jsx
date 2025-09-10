@@ -2,8 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import RecruitersAndCompanies from './components/RecruitersAndCompanies';
-import Mentors from './components/Mentors';
-import TestimonialsAndCTA from './components/TestimonialsAndCTA';
+import ExperienceAndCTA from './components/ExperienceAndCTA';
 
 export default function App() {
   return (
@@ -11,8 +10,7 @@ export default function App() {
       <Hero />
       <HowItWorks />
       <RecruitersAndCompanies />
-      <Mentors />
-      <TestimonialsAndCTA />
+      <ExperienceAndCTA />
       <footer className="border-t border-white/10 py-8 text-center text-sm text-white/60">
         © {new Date().getFullYear()} AlgoUniversity. All rights reserved.
       </footer>

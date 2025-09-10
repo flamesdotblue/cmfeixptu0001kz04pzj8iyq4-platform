@@ -12,7 +12,7 @@ const companies = [
   'PayWave','NeuroGrid','CloudNest','InfinitiSoft','CodeCrate','ByteForge','QuantumLeap','DataHarbor','PixelPeak','AlgoNexus','Streamlite','AstraWorks','HelioStack','CosmoWare','NimbusAI'
 ];
 
-function useAutoAdvance(length, delay = 5000) {
+function useAutoAdvance(length, delay = 6000) {
   const [index, setIndex] = useState(0);
   const next = () => setIndex((i) => (i + 1) % length);
   const prev = () => setIndex((i) => (i - 1 + length) % length);
@@ -43,7 +43,7 @@ export default function RecruitersAndCompanies() {
       </div>
 
       <div className="grid gap-8 lg:grid-cols-5">
-        {/* Left: Carousel */}
+        {/* Carousel */}
         <div className="lg:col-span-3">
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
             <div className={`relative h-64 w-full bg-gradient-to-tr ${current.color} md:h-80`}>
@@ -87,7 +87,7 @@ export default function RecruitersAndCompanies() {
           </div>
         </div>
 
-        {/* Right: Companies */}
+        {/* Companies */}
         <div className="lg:col-span-2">
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 h-full">
             <div className="mb-4 flex items-center justify-between">
