@@ -1,12 +1,19 @@
 import React from 'react';
-import Spline from '@splinetool/react-spline';
 import { Calendar, Clock, MapPin, Ticket, Shield } from 'lucide-react';
 
 export default function Hero() {
   return (
     <section className="relative min-h-[95vh] w-full overflow-hidden" id="hero">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/zks9uYILDPSX-UX6/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <video
+          className="h-full w-full object-cover"
+          src="https://d3uam8jk4sa4y4.cloudfront.net/media/public/monitoring/recordings/screen/Sequence_01_1.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        />
       </div>
 
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
